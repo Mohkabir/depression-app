@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../components/button";
 import InputGroup from "../components/input-group";
 
 const CreateAccount = () => {
+  const navigate = useNavigate();
+
   const handleChange = () => {};
-  const handleCreateAccount = () => {};
+  const handleCreateAccount = () => {
+    navigate("/home");
+  };
 
   return (
     <div>

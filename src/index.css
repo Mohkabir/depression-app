@@ -47,6 +47,11 @@ span {
   justify-content: space-between;
 }
 
+.head a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .head p {
   font-size: 18px;
   font-weight: 400;
@@ -100,8 +105,6 @@ span {
   margin-right: 10px;
 }
 
-.container {
-}
 .home {
   /* outline: 2px solid red; */
   padding-top: 40px;
@@ -112,6 +115,44 @@ span {
   margin: 60px 0;
 }
 
+.questionWrap {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.question {
+  margin: 40px 0;
+  margin-top: 60px;
+}
+.questionWrap .active {
+  background-color: #084175;
+  color: white;
+}
+.options {
+  display: block;
+  width: 70%;
+  background-color: white;
+  padding: 15px;
+  margin: 25px auto;
+  border-radius: 16px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.reportWrap {
+  border: 1px solid black;
+  padding: 15px 30px;
+  margin-top: 30px;
+}
 @media (max-width: 760px) {
   .miniWrap {
     width: 90%;
@@ -124,5 +165,25 @@ span {
 
   .btn {
     font-size: 16px;
+  }
+
+  .questionWrap {
+    width: 90%;
+    padding-top: 40px;
+    text-align: left;
+  }
+  .options {
+    width: 100%;
+    padding: 15px;
+    margin: 25px auto;
+    text-align: left;
+  }
+
+  .controls button {
+    padding: 10px 35px;
+  }
+
+  .reportWrap {
+    padding: 0px 15px;
   }
 }

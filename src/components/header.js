@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ProfileIcon } from "./icons";
 
 const Header = () => {
   return (
     <div className="head">
-      <p>Depression Test</p>
-      {/* <button> */}
+      <Link to="/home">
+        <p>Depression Test</p>
+      </Link>
+
       <ProfileIcon />
-      {/* </button> */}
     </div>
   );
 };
